@@ -1,0 +1,32 @@
+.login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-field{
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+}
+
+.error-message{
+    color: red;
+    font-size: 12px;
+}
+
+.login-form-submit{
+    width: 100%;
+    border: none;
+    background-color: var(--base);
+    color: var(--white);
+}

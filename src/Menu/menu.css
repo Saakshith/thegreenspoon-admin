@@ -1,0 +1,148 @@
+/* #menu-background{
+    background-image: url("./menu_background.jpg");
+} */
+
+.search-bar-container{
+    padding: 0 var(--default-spacing);
+    padding-top: var(--default-spacing);
+    padding-bottom: var(--default-spacing);
+}
+
+.search-bar-container > input{
+    padding: 1vw;
+    margin-left: 0rem;
+    width: 100%;
+}
+
+
+.search-bar-container > label{
+    font-weight: bold;
+}
+
+.menu-page-main{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.cusine{
+    width: 70%;
+}
+
+.menu-cards{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 var(--default-spacing);
+    padding-bottom: var(--default-spacing);
+}
+
+.menu-card{
+    width: 20%;
+    height: 500px;
+    min-width: 300px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 17px 14px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+}
+
+.cusine-tag{
+    display: inline;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    background-color: var(--base);
+    color: var(--white);
+}
+
+.food-image-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.food-description{
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.menu-text-top{
+    display: flex;
+    flex-direction: column;
+    color: var(--dark);
+    height: 60%;
+}
+
+.menu-text-top-heading-price{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.menu-text-bottom{
+    display: flex;
+    justify-content: space-between;
+    color: var(--base);
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-page-main{
+        flex-direction: column;
+    }
+
+    .cusine{
+        width: 100%;
+    }
+}
+
+.menu-card-actions{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--base-dark);
+    padding-top: 1rem;
+}
+
+.menu-card-actions > button{
+    background-color: transparent;
+    border: none;
+}
+
+.delete-btn{
+    font-size: 20px; 
+    color: red;
+}
+
+.edit-btn{
+    font-size: 20px;
+    color: gray;
+}
+
+.menu-card-add{
+    background-color: var(--base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-btn{
+    font-size: 7rem;
+    color: white;
+    background: transparent;
+    border: none;
+}
