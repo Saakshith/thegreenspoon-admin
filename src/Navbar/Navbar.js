@@ -13,15 +13,15 @@ const Navbar = (props) => {
   
   return (
     <nav className="nav">
-        {/* <div className="logo-container">
-            <Link to=""><a href="/" className="logo-container-link">
+        <div className="logo-container">
+            <a href="/" className="logo-container-link">
                 <img src={props.logo} alt="" className="logo-img"/>
                 <div className="logo-text">
                     <h2 className="logo-header" style={{color: props.color}}>The Green Spoon</h2>
                     <p className="logo-description" style={{color: props.color}}>Meatless Foods • Meaty Flavors</p>
                 </div>
-            </a></Link>
-        </div> */}
+            </a>
+        </div>
         <ul className="nav-link-container" ref={navRef}>
             <li className="nav-item"><Link to="/menu"><a href="" style={{color: props.navLinkColor}}>Menu</a></Link></li>
             <li className="nav-item"><Link to="/reservations"><a href="" style={{color: props.navLinkColor}}>Reservations</a></Link></li>
