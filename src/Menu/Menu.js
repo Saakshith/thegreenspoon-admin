@@ -9,10 +9,12 @@ import { FaTrash, FaPen, FaPlus, FaPencilAlt } from 'react-icons/fa'
 
 const Menu = () => {
 
+
   const [menuItems, setMenuItems] = useState([])
   const menuItemsRef = collection(db, "menu-items")
 
   useEffect(() => {
+
     const getMenuItems = async () => {
       const data = await getDocs(menuItemsRef)
       setMenuItems(data.docs.map((doc) => ({...doc.data(), id: doc.id})))

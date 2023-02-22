@@ -3,13 +3,21 @@ import {Link} from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import "./navbar.css"
 import { FaPowerOff, FaCode } from 'react-icons/fa'
+import { useNavigate } from "react-router-dom"
 
 const Navbar = (props) => {
+  const navigate = useNavigate()
   const navRef = useRef()
   
   const showNavbar = () => {
     navRef.current.classList.toggle('responsive-nav')
   }
+
+  const signOutUser= (e) => {
+    // Doesnt work yet
+    e.preventDefault();
+    navigate("/")
+  };
   
   return (
     <nav className="nav">
@@ -30,7 +38,7 @@ const Navbar = (props) => {
                 <FaTimes />
             </button>
         </ul> 
-        <button className="logout-btn" >Logout <FaPowerOff /></button>
+        <button className="logout-btn" onClick={signOutUser}>Logout <FaPowerOff /></button>
         <button 
             onClick={showNavbar} 
             className="hamburger" 
