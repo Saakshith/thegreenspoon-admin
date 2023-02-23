@@ -25,7 +25,7 @@ const Reservations = () => {
     getReservations()
   }, [])
 
-  const deleteReservation = async (id, e) => {
+  const deleteReservation = async (id) => {
     // e.preventDefault();
     try{
       const res = await deleteDoc(doc(db, "reservations", id));
