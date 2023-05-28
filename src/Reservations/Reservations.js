@@ -52,6 +52,7 @@ const Reservations = () => {
             <TableRow>
               <TableCell>Customer Name</TableCell>
               <TableCell align="left">Email</TableCell>
+              <TableCell align="left">Phone</TableCell>
               <TableCell align="left">Date Of Reservation</TableCell>
               <TableCell align="left">Time Of Reservation</TableCell>
               <TableCell align="left">Party Size</TableCell>
@@ -67,6 +68,7 @@ const Reservations = () => {
                   {reservation.name}
                 </TableCell>
                 <TableCell align="left">{reservation.email}</TableCell>
+                <TableCell align="left">{reservation.phone}</TableCell>
                 <TableCell align="left">{reservation.time[0]}</TableCell>
                 <TableCell align="left">{reservation.time[1]}</TableCell>
                 <TableCell align="left">{reservation.guests}</TableCell>
