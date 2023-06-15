@@ -80,6 +80,8 @@ const Menu = () => {
     }
   };
 
+
+
   const handleUpdateItem = async (id, e) => {
     e.preventDefault();
     try {
@@ -96,6 +98,7 @@ const Menu = () => {
       window.alert("Item has been updated");
       toggleUpdateModal();
       clearForm();
+      
     } catch (err) {
       console.log(err);
     }

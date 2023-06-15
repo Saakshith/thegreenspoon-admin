@@ -36,6 +36,8 @@ const Modal = ({
     clearForm();
   };
 
+
+
   return (
     <div className="modal">
       <div className="overlay">
