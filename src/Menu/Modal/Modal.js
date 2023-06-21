@@ -31,7 +31,7 @@ const Modal = ({
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     handleItem(e);
     clearForm();
   };
@@ -126,7 +126,7 @@ const Modal = ({
               </button>
             </div>
           </form>
-          <button className="close-modal" onClick={() => { toggleModal(); clearForm(); }}>
+          <button className="close-modal" onClick={() => { toggleModal(); clearForm(); window.location.reload()}}>
             Close
           </button>
         </div>

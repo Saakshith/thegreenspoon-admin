@@ -38,15 +38,18 @@ const Menu = () => {
 
   const toggleUpdateModal = (id) => {
     const selectedItem = menuItems.find((item) => item.id === id);
-    setId(id);
-    setCusine(selectedItem.cusine);
-    setImageURL(selectedItem.image);
-    setName(selectedItem.name);
-    setPrice(selectedItem.price);
-    setDescription(selectedItem.description);
-    setCalories(selectedItem.calories);
-    setRestrictions(selectedItem.restrictions);
-    setUpdateModal(!updateModal);
+    if(selectedItem){
+      setId(id);
+      setCusine(selectedItem.cusine);
+      setImageURL(selectedItem.image);
+      setName(selectedItem.name);
+      setPrice(selectedItem.price);
+      setDescription(selectedItem.description);
+      setCalories(selectedItem.calories);
+      setRestrictions(selectedItem.restrictions);
+      setUpdateModal(!updateModal);
+      console.log("toggled update modal");
+    }
   };
 
   const clearForm = () => {
@@ -75,6 +78,7 @@ const Menu = () => {
       window.alert("Item has been added");
       toggleAddModal();
       clearForm();
+      window.location.reload()
     } catch (err) {
       console.log(err);
     }
@@ -98,6 +102,7 @@ const Menu = () => {
       window.alert("Item has been updated");
       toggleUpdateModal();
       clearForm();
+      window.location.reload()
       
     } catch (err) {
       console.log(err);
@@ -109,6 +114,7 @@ const Menu = () => {
     try {
       await deleteDoc(doc(db, "menu-items", id));
       window.alert("Item has been deleted");
+      window.location.reload();
     } catch (err) {
       console.log(err);
     }
