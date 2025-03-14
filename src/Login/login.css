@@ -5,6 +5,15 @@
     justify-content: center;
 }
 
+#title{
+    width:110%;
+    text-align: center;
+}
+
+p{
+    font-size: 10px;
+}
+
 .login-form{
     display: flex;
     flex-direction: column;

@@ -51,6 +51,10 @@ const Login = () => {
             </div>
             <button className='login-form-submit' type="submit">Log In</button>
             {error && <span className='error-message'>Wrong Email or Password</span>}
+            <p></p>
+            <p id="title">For Demonstration Purposes</p>
+            <p>Email: greenspoonservices@gmail.com</p>
+            <p>Password: thegreenspoon</p>
         </form>
     </div>
   )
